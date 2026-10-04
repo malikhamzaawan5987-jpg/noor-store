@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | Noor General Store</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><a class="logo" href="index.html">Noor General Store</a><nav><a href="index.html">Home</a><a href="products.html" class="on">Products</a><a href="contact.html">Contact</a><a href="products.html#cart" class="cartlink">Cart (<span id="cartCount">0</span>)</a></nav></header>
+<main><h1>Products</h1>
+<div class="tools"><input id="search" type="search" placeholder="Search products" aria-label="Search products">
+<select id="category" aria-label="Category"><option value="all">All categories</option><option>Grocery</option><option>Dairy</option><option>Cleaning</option><option>Snacks</option></select></div>
+<div class="grid" id="products"></div><p id="empty" hidden>No product matches your search. Try another word.</p>
+<section id="cart" class="cartbox"><h2>Your cart</h2><ul id="cartItems"></ul><p class="total">Total: Rs <span id="cartTotal">0</span></p>
+<button class="btn" id="clearCart" type="button">Clear cart</button></section></main>
+<footer class="foot"><p>Noor General Store · Main Bazaar · Open daily 8am to 10pm · Phone: 0300-0000000</p></footer><script src="script.js"></script>
+</body></html>

@@ -1,0 +1,41 @@
+:root{--green:#14532d;--leaf:#2f855a;--sun:#f4b400;--bg:#f2f7f4;--ink:#17261d;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--ink);line-height:1.6}
+h1,h2,.logo,.btn,nav{font-family:"Trebuchet MS",Verdana,sans-serif}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;padding:14px 5%;background:var(--green)}
+.logo{color:#fff;font-size:1.3rem;font-weight:700;text-decoration:none}
+nav a{color:#d7efe0;margin-left:18px;text-decoration:none;padding-bottom:3px}
+nav a.on{color:var(--sun);border-bottom:2px solid var(--sun)}
+nav a:hover,nav a:focus-visible{color:#fff}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:56px 5%;background:var(--sun)}
+.hero h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.15;margin:0 0 12px;max-width:16em}
+.hero p{max-width:34em}.heroart{font-size:7rem}
+.btn{display:inline-block;background:var(--green);color:#fff;border:0;padding:11px 22px;border-radius:6px;font-size:1rem;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--leaf)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+main{padding:28px 5% 40px;max-width:1100px;margin:auto}
+.narrow{max-width:620px}
+h2{margin-top:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid #cfe3d7;border-radius:10px;padding:16px;text-align:center}
+.card .pic{font-size:3.6rem}
+.card h3{margin:6px 0 2px;font-size:1.05rem}.price{font-weight:700;color:var(--green)}
+.card button{margin-top:8px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px}
+.cat{background:var(--green);color:#fff;border-radius:10px;padding:22px 10px;text-align:center;font-size:2.4rem}
+.cat b{display:block;font-size:1rem;font-family:"Trebuchet MS",sans-serif;margin-top:4px}
+.about{max-width:42em}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+input,select,textarea{font:inherit;padding:10px;border:1px solid #9bbfaa;border-radius:6px;background:#fff;width:100%}
+.tools input{flex:1;min-width:200px;width:auto}.tools select{width:auto}
+form label{display:block;margin-bottom:14px;font-weight:700}
+form input,form textarea{margin-top:4px;font-weight:400}
+#formMsg{min-height:1.5em;font-weight:700}.ok{color:var(--leaf)}.err{color:#b42318}
+.cartbox{margin-top:40px;background:var(--card);border:1px solid #cfe3d7;border-radius:10px;padding:8px 20px 20px}
+.cartbox ul{list-style:none;padding:0}
+.cartbox li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #e1ede6}
+.cartbox li button{background:none;border:0;color:#b42318;cursor:pointer;font:inherit}
+.total{font-weight:700;font-size:1.15rem}
+.foot{background:var(--green);color:#d7efe0;text-align:center;padding:18px 5%;font-size:.9rem}
+.foot p{margin:0}
+@media (max-width:600px){.heroart{display:none}nav a{margin:0 12px 0 0}}
